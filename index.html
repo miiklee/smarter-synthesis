@@ -11,15 +11,18 @@
   <body>
     <h3> Smarter Program Synthesis Algorithm </h3>
     <p> put your input, output pair in the text box below, using a space as a delimiter
-        between the two and a comma between any pairs, then press "transform" 
-        to get functions that transform the input into the output</p>
+        between the two and a comma followed by a space between any pairs, then press "transform" 
+        to get functions that transform the inputs into the outputs</p>
         <p>functions will be using addition, subtraction, multiplication, and integer
-          division</p>
+          division as well as "toString" and "toInt" methods.</p>
+          <p style="padding-left: 20px;"> e.g. 
+            <span style="border-width:1px; border-style:solid; border-color: grey;"> "2" 4, "3" 5 </span> 
+          -- ** transform ** --> toInt( input ) +2, toInt( input ) -3+5, etc.</p>
   </body>
   <input type="text" id="input">
   <button id="input_button"> ** transform ** </button>
 
-  <p id="label" style="visibility:hidden"> your function(s) are: </p>
+  <p id="label" style="visibility:hidden"> your function(s) is/are: </p>
   <p id="node"></p>
-  <script src="brute-force.js"> </script>
+  <script src="smarter.js"> </script>
 </html>
